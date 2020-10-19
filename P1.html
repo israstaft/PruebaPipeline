@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ta gordo</title>
+  </head>
+  <body>
+    <h1>Calcula tu peso</h1>
+    <p>En marte o jupiter pesas distinto</p>
+    <script>
+      var peso = parseInt(prompt("dame tu peso"));
+      var eleccion = parseInt(prompt("pulsa 1 si quieres martes. Pulsa 2 si quieres jupiter"));
+      var G_M = 3.7;
+      var G_T = 9.8;
+      var G_J = 24.8;
+      var pesoFinal;
+      if(eleccion == 1)
+      {
+        pesoFinal = (peso * G_M)/G_T;
+        document.write("tu peso en marte es:<strong> " + pesoFinal + " kilos</strong>");
+      }
+      else if (eleccion == 2)
+      {
+        pesoFinal = (peso * G_J)/G_T;
+        document.write("tu peso en jupiter es:<strong> " + pesoFinal + " kilos</strong>");
+      }
+
+    </script>
+  </body>
+</html>
